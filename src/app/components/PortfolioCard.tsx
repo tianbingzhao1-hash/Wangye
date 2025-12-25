@@ -1,5 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 interface PortfolioCardProps {
   title: string;
@@ -7,9 +8,10 @@ interface PortfolioCardProps {
   link: string;
   color: string;
   index: number;
+  imageUrl?: string;
 }
 
-export function PortfolioCard({ title, description, link, color, index }: PortfolioCardProps) {
+export function PortfolioCard({ title, description, link, color, index, imageUrl }: PortfolioCardProps) {
   return (
     <motion.a
       href={link}
@@ -26,6 +28,21 @@ export function PortfolioCard({ title, description, link, color, index }: Portfo
       
       {/* Card container */}
       <div className="relative h-full bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl rounded-2xl border border-white/10 group-hover:border-white/20 transition-all duration-300 overflow-hidden">
+        {/* Background Image with overlay */}
+        {imageUrl && (
+          <>
+            <div className="absolute inset-0 overflow-hidden">
+              <ImageWithFallback 
+                src={imageUrl}
+                alt={title}
+                className="w-full h-full object-cover opacity-20 group-hover:opacity-30 group-hover:scale-110 transition-all duration-700"
+              />
+            </div>
+            {/* Dark gradient overlay for better text readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-[#0a0a0f]/80 to-[#0a0a0f]/60" />
+          </>
+        )}
+        
         {/* Gradient border animation */}
         <div className={`absolute inset-0 bg-gradient-to-r ${color} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
         

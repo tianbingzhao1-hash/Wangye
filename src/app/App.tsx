@@ -8,61 +8,71 @@ export default function App() {
       title: "个人主页",
       description: "个人链接合集，包含各平台账号信息",
       link: "https://vlink.cc/hr619phk",
-      color: "from-cyan-500 to-blue-500"
+      color: "from-cyan-500 to-blue-500",
+      imageUrl: "https://images.unsplash.com/photo-1760074016396-dde74286c65a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwcHJvZmlsZSUyMGxpbmtzfGVufDF8fHx8MTc2NjY1ODI0Nnww&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       title: "专辑合集 01",
       description: "精选作品集 - 设计与创意系列",
       link: "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzYzMjMwODYwNg==&action=getalbum&album_id=4286723840665042944#wechat_redirect",
-      color: "from-purple-500 to-pink-500"
+      color: "from-purple-500 to-pink-500",
+      imageUrl: "https://images.unsplash.com/photo-1624901344246-8759f305fef3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRlc2lnbiUyMGFydHxlbnwxfHx8fDE3NjY2NDg0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       title: "专辑合集 02",
       description: "精选作品集 - 技术与分享系列",
       link: "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzYzMjMwODYwNg==&action=getalbum&album_id=4286352055746543630#wechat_redirect",
-      color: "from-orange-500 to-red-500"
+      color: "from-orange-500 to-red-500",
+      imageUrl: "https://images.unsplash.com/photo-1595623654300-b27329804025?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwY29kaW5nfGVufDF8fHx8MTc2NjYyNzU2NXww&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       title: "专辑合集 03",
       description: "精选作品集 - 思考与洞察系列",
       link: "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzYzMjMwODYwNg==&action=getalbum&album_id=4288121910149627924#wechat_redirect",
-      color: "from-green-500 to-emerald-500"
+      color: "from-green-500 to-emerald-500",
+      imageUrl: "https://images.unsplash.com/photo-1758151843774-613922a8dff6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aGlua2luZyUyMG1pbmRzZXR8ZW58MXx8fHwxNzY2NjU4MjQ3fDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       title: "专辑合集 04",
       description: "精选作品集 - 项目与实践系列",
       link: "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzYzMjMwODYwNg==&action=getalbum&album_id=4284048873561374731#wechat_redirect",
-      color: "from-indigo-500 to-purple-500"
+      color: "from-indigo-500 to-purple-500",
+      imageUrl: "https://images.unsplash.com/photo-1542626991-cbc4e32524cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9qZWN0JTIwZGV2ZWxvcG1lbnR8ZW58MXx8fHwxNzY2NjU4MjQ3fDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       title: "专辑合集 05",
       description: "精选作品集 - 学习与成长系列",
       link: "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzYzMjMwODYwNg==&action=getalbum&album_id=4285511147924865046#wechat_redirect",
-      color: "from-pink-500 to-rose-500"
+      color: "from-pink-500 to-rose-500",
+      imageUrl: "https://images.unsplash.com/photo-1759922378123-a1f4f1e39bae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsZWFybmluZyUyMGVkdWNhdGlvbnxlbnwxfHx8fDE3NjY2NTgyNDh8MA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       title: "专辑合集 06",
       description: "精选作品集 - 工具与效率系列",
       link: "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzYzMjMwODYwNg==&action=getalbum&album_id=4282580578140274699#wechat_redirect",
-      color: "from-yellow-500 to-orange-500"
+      color: "from-yellow-500 to-orange-500",
+      imageUrl: "https://images.unsplash.com/photo-1652177217044-4f62dacf0ceb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9kdWN0aXZpdHklMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzY2NTk1Mzg0fDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       title: "专辑合集 07",
       description: "精选作品集 - 观点与评论系列",
       link: "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzYzMjMwODYwNg==&action=getalbum&album_id=4282581636933599242#wechat_redirect",
-      color: "from-teal-500 to-cyan-500"
+      color: "from-teal-500 to-cyan-500",
+      imageUrl: "https://images.unsplash.com/photo-1632858265907-961f1454ccf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXNjdXNzaW9uJTIwbWVldGluZ3xlbnwxfHx8fDE3NjY2NTgyNDh8MA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       title: "专辑合集 08",
       description: "精选作品集 - 案例与分析系列",
       link: "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzYzMjMwODYwNg==&action=getalbum&album_id=4282580044792578061#wechat_redirect",
-      color: "from-violet-500 to-fuchsia-500"
+      color: "from-violet-500 to-fuchsia-500",
+      imageUrl: "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHlzaXN8ZW58MXx8fHwxNzY2NjQyMDkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       title: "专辑合集 09",
       description: "精选作品集 - 灵感与创意系列",
       link: "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzYzMjMwODYwNg==&action=getalbum&album_id=4283505957197692933#wechat_redirect",
-      color: "from-blue-500 to-indigo-500"
+      color: "from-blue-500 to-indigo-500",
+      imageUrl: "https://images.unsplash.com/photo-1647517091946-3a804f06c9bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnNwaXJhdGlvbiUyMGxpZ2h0YnVsYnxlbnwxfHx8fDE3NjY2NTgyNDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
     }
   ];
 
@@ -207,17 +217,6 @@ export default function App() {
               className="flex flex-wrap justify-center gap-3"
             >
               <a
-                href="mailto:your.email@example.com"
-                className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500" />
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
-                <Mail className="w-4 h-4 relative z-10 text-white" />
-                <span className="relative z-10 text-white text-sm">联系我</span>
-              </a>
-              
-              <a
                 href="https://vlink.cc/hr619phk"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -293,8 +292,8 @@ export default function App() {
                   }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <LinkIcon className="w-5 h-5 text-white drop-shadow-lg" />
-                  <span className="text-white font-medium drop-shadow-lg">更多链接</span>
+                  <Sparkles className="w-5 h-5 text-white drop-shadow-lg" />
+                  <span className="text-white font-medium drop-shadow-lg">全部账号 & 联系方式</span>
                   <motion.div
                     animate={{
                       x: [0, 3, 0],
@@ -342,6 +341,7 @@ export default function App() {
               link={item.link}
               color={item.color}
               index={index}
+              imageUrl={item.imageUrl}
             />
           ))}
         </div>
