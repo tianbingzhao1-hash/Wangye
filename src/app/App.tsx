@@ -221,11 +221,93 @@ export default function App() {
                 href="https://vlink.cc/hr619phk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl overflow-hidden border border-white/20 backdrop-blur-xl hover:border-white/30 transition-all"
+                className="group relative inline-flex items-center gap-2 px-8 py-3 rounded-xl overflow-hidden"
               >
-                <div className="absolute inset-0 bg-white/5 group-hover:bg-white/10 transition-colors" />
-                <LinkIcon className="w-4 h-4 relative z-10 text-gray-300 group-hover:text-white transition-colors" />
-                <span className="relative z-10 text-gray-300 group-hover:text-white transition-colors text-sm">更多链接</span>
+                {/* 多层背景效果 */}
+                <motion.div 
+                  className="absolute inset-0 bg-gradient-to-br from-cyan-500 via-blue-500 to-indigo-600"
+                  animate={{
+                    scale: [1, 1.02, 1],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 via-blue-400 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                
+                {/* 光晕效果 - 呼吸动画 */}
+                <motion.div 
+                  className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-500 blur-2xl"
+                  animate={{
+                    opacity: [0.6, 0.9, 0.6],
+                    scale: [1, 1.1, 1],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* 玻璃高光 */}
+                <motion.div 
+                  className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/30 to-transparent"
+                  animate={{
+                    opacity: [0.5, 0.7, 0.5],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* 底部阴影 */}
+                <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent" />
+                
+                {/* 边框光效 - 呼吸动画 */}
+                <motion.div 
+                  className="absolute inset-0 rounded-xl ring-1 ring-white/30"
+                  animate={{
+                    opacity: [0.5, 1, 0.5],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                
+                {/* 内容 */}
+                <motion.div
+                  className="relative z-10 flex items-center gap-2"
+                  animate={{
+                    scale: [1, 1.03, 1],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <LinkIcon className="w-5 h-5 text-white drop-shadow-lg" />
+                  <span className="text-white font-medium drop-shadow-lg">更多链接</span>
+                  <motion.div
+                    animate={{
+                      x: [0, 3, 0],
+                    }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  >
+                    <div className="w-1 h-1 rounded-full bg-white/80 shadow-lg shadow-white/50" />
+                  </motion.div>
+                </motion.div>
               </a>
             </motion.div>
           </motion.div>
